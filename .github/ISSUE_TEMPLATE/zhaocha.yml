@@ -1,0 +1,58 @@
+name: 找茬计划 · 报告问题
+description: 报告 app 或网站的 bug、不合适的文案，经确认属实每处 +3 天授权时长
+title: "[找茬] "
+labels: ["找茬计划"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢找茬！报告经作者确认属实的问题，每处 +3 天授权时长、永久有效。
+        提交前请先搜索是否已有人报告同一问题——同一问题只奖励**第一位**报告者。
+  - type: checkboxes
+    id: prechecks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 如为客户端问题，我已在**最新版**客户端确认仍可复现（旧版已修复的不计入）；网站 / 文档问题无需版本，可直接勾选。
+          required: true
+        - label: 我已搜索现有 issue，确认这是**首次**报告该问题。
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 客户端 bug
+        - 网站 bug
+        - 文案问题（错别字 / 歧义 / 别扭）
+        - 体验缺陷（点不动 / 对不齐 / 走不通）
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 问题描述与复现步骤
+      description: 尽量写清在哪个页面、怎么操作、期望什么、实际什么。附截图更容易确认。
+      placeholder: |
+        1. 打开「我的文章」→ 点导出
+        2. 期望：弹出导出对话框
+        3. 实际：无反应，控制台报错 …
+    validations:
+      required: true
+  - type: input
+    id: report_code
+    attributes:
+      label: 找茬码（领取奖励用）
+      description: 在客户端「设置 → 账户 → 找茬计划」卡片、或网站「我的套餐」页复制，用于把这条 issue 对应到你的账号发放时长。暂时拿不到可留空，我们会在评论里跟你核对——不影响提交。
+      placeholder: 例如 a1b2c3d4
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: 客户端版本 / 系统
+      description: 客户端问题请填（「设置 → 关于」可查看版本号）；网站 / 文档问题可留空。
+      placeholder: 例如 v0.3.4 · macOS 14
+    validations:
+      required: false
