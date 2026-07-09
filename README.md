@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="logo.png" width="96" height="96" alt="公号三刀" />
+
 # 公号三刀
 
 **把任意公众号文章完整搬回本地**
@@ -8,9 +10,9 @@
 <br />
 图文与排版原样保留，离线随时可读。
 
-[⬇️ 下载 Windows 客户端][dl-win] · [⬇️ 下载 macOS 客户端（Apple 芯片）][dl-mac]
+[⬇️ Windows 客户端][dl-win] · [⬇️ macOS（Apple 芯片）][dl-mac] · [⬇️ macOS（Intel）][dl-mac-x64]
 
-公开下载 · 关注公众号领码注册 · 支持 Windows 与 macOS（Apple 芯片）
+公开下载 · 关注公众号领码注册 · 支持 Windows 与 macOS（Apple 芯片 / Intel）
 
 </div>
 
@@ -20,7 +22,7 @@
 
 ## 这是什么
 
-公号三刀是一款**微信公众号文章下载桌面客户端**（支持 Windows 与 macOS，后者仅 Apple 芯片）。你只需用微信扫码授权一次，就能搜索任意公众号、把它的历史图文连同排版与图片/视频完整抓取到本地，然后离线阅读，或一键导出成 HTML / Markdown / Word / PDF / EPUB 长期归档。
+公号三刀是一款**微信公众号文章下载桌面客户端**（支持 Windows 与 macOS，后者兼容 Apple 芯片与 Intel 芯片）。你只需用微信扫码授权一次，就能搜索任意公众号、把它的历史图文连同排版与图片/视频完整抓取到本地，然后离线阅读，或一键导出成 HTML / Markdown / Word / PDF / EPUB 长期归档。
 
 - 📦 **原样保留**：图文排版、配图与样式照搬，离线打开和在微信里看几乎一致。
 - 🗂️ **批量高效**：跨多个公众号搜索、抓取、导出，一次处理成百上千篇。
@@ -35,7 +37,7 @@
 ## 下载与安装
 
 - **Windows**（Windows 10 及以上，x64）：[下载安装包][dl-win]（或前往 [Releases][download] 取 `sanji-<版本>-setup.exe`），双击安装即可。
-- **macOS**（Apple 芯片 / M 系列）：[下载安装包][dl-mac]（或前往 [Releases][download] 取 `sanji-<版本>-arm64.dmg`），打开后拖入「应用程序」即可。
+- **macOS**：Apple 芯片（M 系列）取 [下载安装包][dl-mac] / `sanji-<版本>-arm64.dmg`，Intel 芯片取 [下载安装包][dl-mac-x64] / `sanji-<版本>-x64.dmg`（或前往 [Releases][download]）；打开后拖入「应用程序」即可。不确定芯片？点开屏幕左上角  →「关于本机」查看。
 - **自动更新**：安装一次后，客户端会自动检查并在后台静默下载更新，无需再手动下载。
 
 > **使用前提**：① 登录已激活的**公号三刀账号**（在我们的网站注册并激活，不是你的微信账号）；② **拥有你自己的微信公众号**——用于扫码授权，作为抓取文章的身份。详见下方[三步开始](#三步开始)。
@@ -158,7 +160,7 @@
 ## 常见问题
 
 **支持哪些系统？**
-支持 Windows 10 及以上（x64）与 macOS（Apple 芯片 / M 系列）。客户端内置自动更新，安装一次后会自动保持最新。
+支持 Windows 10 及以上（x64）与 macOS（Apple 芯片与 Intel 芯片均支持）。客户端内置自动更新，安装一次后会自动保持最新。
 
 **用之前需要准备什么？**
 两样东西：① 一个**公号三刀账号**（我们网站的账号，在 [wechat.zoro.build](https://wechat.zoro.build) 注册并激活，注意它不是你的微信账号）；② **你自己的微信公众号**——授权时用它扫码，作为抓取文章的身份。还没有公众号？可在[微信公众号官网](https://mp.weixin.qq.com)免费注册。
@@ -206,4 +208,5 @@
 [download]: https://github.com/zoro-build/wechat/releases
 [dl-win]: https://dl.zoro.build/sanji/download/win
 [dl-mac]: https://dl.zoro.build/sanji/download/mac
+[dl-mac-x64]: https://dl.zoro.build/sanji/download/mac?arch=x64
 [issue]: https://github.com/zoro-build/wechat/issues
