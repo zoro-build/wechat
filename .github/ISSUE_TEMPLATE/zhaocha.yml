@@ -49,6 +49,14 @@ body:
     validations:
       required: false
   - type: input
+    id: ticket
+    attributes:
+      label: 工单号（诊断日志）
+      description: 在客户端「设置 → 账户 → 找茬计划」点「上报日志并去 GitHub 报告」会自动填好这一栏；手动提交可留空。附上它，作者能直接调出你这次的运行日志，问题确认得更快。
+      placeholder: 例如 934FD437
+    validations:
+      required: false
+  - type: input
     id: version
     attributes:
       label: 客户端版本 / 系统
